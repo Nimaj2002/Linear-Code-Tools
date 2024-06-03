@@ -57,8 +57,8 @@ if __name__ == "__main__":
             decoded_y = "none"
 
         C = generate_codewords(G2, base)
-        st.code(f"Codewords (C):\n{C}\n\nminimum distance:\t{
-                calculate_minimum_distance(C)}")
+        st.code(f"""Codewords (C):\n{C}\n\nminimum distance:\t
+                {calculate_minimum_distance(C)}""")
 
         H = parity_check_matrix_generator(G2, base)
         text = "Parity Check matrix (H):\n"
